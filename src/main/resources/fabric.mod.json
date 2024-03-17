@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dungeonsrpg",
+	"version": "${version}",
+	"name": "Dungeons RPG",
+	"description": "Solo-Leveling inspired mod",
+	"authors": [
+		"MythCore"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dungeons-rpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mythcore.dungeons.DungeonsRPG"
+		],
+		"client": [
+			"mythcore.dungeons.DungeonsRPGClient"
+		],
+		"fabric-datagen": [
+			"mythcore.dungeons.DungeonsRPGDataGenerator"
+		]
+	},
+	"mixins": [
+		"dungeons-rpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
