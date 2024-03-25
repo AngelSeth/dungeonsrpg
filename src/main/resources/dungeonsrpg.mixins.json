@@ -4,7 +4,8 @@
 	"package": "mythcore.dungeons.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"PlayerHudMixin"
+		"PlayerHudMixin",
+		"MobHealthRendererMixin"
 	],
 	"client": [],
 	"injectors": {
